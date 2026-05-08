@@ -29,6 +29,12 @@ btnTambahTodo.addEventListener("click",function(){
     const btnHapus = document.createElement("button");
     btnHapus.textContent = "Hapus";
 
+    btnEdit.addEventListener("click",function(){
+        inputValue.value = span.textContent;
+
+        daftarTugas.removeChild(listBaru);
+    });
+
     listBaru.appendChild(span);
     listBaru.appendChild(item);
 
