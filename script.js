@@ -23,4 +23,9 @@ btnTambahTodo.addEventListener("click",function(){
     item.classList.add("deadline");
     item.textContent = " deadline: " + tanggal;
 
+    listBaru.appendChild(span);
+    listBaru.appendChild(item);
+
+    daftarTugas.appendChild(listBaru);
+
 });
