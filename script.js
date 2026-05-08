@@ -40,6 +40,12 @@ btnTambahTodo.addEventListener("click",function(){
         daftarTugas.removeChild(listBaru);
     });
 
+    const status = document.createElement("status");
+    status.textContent = " Progress ";
+
+    const btnStatus = document.createElement("button");
+    btnStatus.textContent = "Selesai";
+
 
     listBaru.appendChild(span);
     listBaru.appendChild(item);
