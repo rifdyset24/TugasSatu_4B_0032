@@ -28,4 +28,8 @@ btnTambahTodo.addEventListener("click",function(){
 
     daftarTugas.appendChild(listBaru);
 
+    inputValue.value= "";
+    inputTanggal.value="";
+    inputValue.focus();
+
 });
