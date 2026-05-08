@@ -17,3 +17,20 @@ body{
 input{
     flex: 1;
 }
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+#btnTambahTodo{
+    background-color: green;
+    border: none;
+    color: white;
+}
+
