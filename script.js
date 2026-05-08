@@ -46,10 +46,29 @@ btnTambahTodo.addEventListener("click",function(){
     const btnStatus = document.createElement("button");
     btnStatus.textContent = "Selesai";
 
+    btnStatus.addEventListener("click", function () {
+
+        if (status.textContent === " Progress ") {
+
+            status.textContent = " Done ";
+            btnStatus.textContent = "Progress";
+
+        } else {
+
+            status.textContent = " Progress ";
+            btnStatus.textContent = "Selesai";
+
+        }
+
+    });
+
 
     listBaru.appendChild(span);
     listBaru.appendChild(item);
-
+    listBaru.appendChild(status);
+    listBaru.appendChild(btnStatus);
+    listBaru.appendChild(btnEdit);
+    listBaru.appendChild(btnHapus);
     daftarTugas.appendChild(listBaru);
 
     inputValue.value= "";
