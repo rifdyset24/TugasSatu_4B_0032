@@ -23,6 +23,12 @@ btnTambahTodo.addEventListener("click",function(){
     item.classList.add("deadline");
     item.textContent = " deadline: " + tanggal;
 
+    const btnEdit = document.createElement("button");
+    btnEdit.textContent = "Edit";
+
+    const btnHapus = document.createElement("button");
+    btnHapus.textContent = "Hapus";
+
     listBaru.appendChild(span);
     listBaru.appendChild(item);
 
@@ -31,5 +37,6 @@ btnTambahTodo.addEventListener("click",function(){
     inputValue.value= "";
     inputTanggal.value="";
     inputValue.focus();
+
 
 });
