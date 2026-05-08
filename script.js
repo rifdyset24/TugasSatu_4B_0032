@@ -1,0 +1,4 @@
+const inputValue = document.getElementById("inputTask");
+const btnTambahTodo = document.getElementById("btnTambahTodo");
+const inputTanggal = document.getElementById("tanggal");
+const daftarTugas = document.getElementById("listTugas");
