@@ -8,3 +8,12 @@ body{
     padding: 20px;
     border-radius: 10px;
 }
+
+#formTodo{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+}
