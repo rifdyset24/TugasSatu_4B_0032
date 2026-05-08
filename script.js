@@ -35,6 +35,12 @@ btnTambahTodo.addEventListener("click",function(){
         daftarTugas.removeChild(listBaru);
     });
 
+    btnHapus.addEventListener("click",function(){
+
+        daftarTugas.removeChild(listBaru);
+    });
+
+
     listBaru.appendChild(span);
     listBaru.appendChild(item);
 
