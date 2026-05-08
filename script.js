@@ -14,5 +14,13 @@ btnTambahTodo.addEventListener("click",function(){
     const span = document.createElement("span");
     span.innerHTML = inputValue.value;
 
+    const tanggal = inputTanggal.value;
+    if (tanggal === "") {
+        alert("Tanggal harus diisi!");
+        return;
+    }
+    const item = document.createElement("span");
+    item.classList.add("deadline");
+    item.textContent = " deadline: " + tanggal;
 
 });
